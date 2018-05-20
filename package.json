@@ -107,16 +107,6 @@
     "loader"
   ],
   "license": "MIT",
-  "lint-staged": {
-    "lib/**/*.js": [
-      "eslint --fix",
-      "git add"
-    ],
-    "test/**/*.js": [
-      "eslint --fix",
-      "git add"
-    ]
-  },
   "main": "index.js",
   "name": "mpvue-loader",
   "peerDependencies": {
@@ -128,12 +118,6 @@
     "url": "git+https://github.com/mpvue/mpvue-loader.git"
   },
   "scripts": {
-    "docs": "cd docs && gitbook serve",
-    "docs:deploy": "bash ./docs/deploy.sh",
-    "lint": "eslint lib test",
-    "lint:fix": "eslint lib test --fix",
-    "precommit": "lint-staged",
-    "test": "eslint lib && mocha --slow 5000 --timeout 10000"
   },
   "version": "1.0.13"
 }
